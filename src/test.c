@@ -10,7 +10,9 @@
 int main(void){
     printf("Value of the output: %s\n", testOutput());
 
-    assert(strcmp(testOutput(), "Linux statement"));
+    assert(strcmp(testOutput(), "Linux statement")); /*TEST: if you are using linux */
     
+    /*assert(!strcmp(testOutput(), "Windows statement")); TEST: if you are using windows */
+
     return EXIT_SUCCESS;
 }
